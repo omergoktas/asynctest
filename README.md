@@ -1,4 +1,4 @@
-# asynctest
+# AsyncTest
 
 Example project for [async library](https://github.com/omergoktas/async)
 
