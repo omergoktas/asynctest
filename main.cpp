@@ -45,7 +45,7 @@ int timeConsumingRandomNumberGenerator(QFutureInterfaceBase* futureInterface, in
         if (future->isCanceled())
             return value;
         value = QRandomGenerator::global()->bounded(rangeMin, rangeMax);
-        future->setProgressValueAndText(i, QString("Random number: %1").arg(value));
+        future->setProgressValueAndText(i, messages[i / 30]);
         QThread::msleep(50);
     }
 
