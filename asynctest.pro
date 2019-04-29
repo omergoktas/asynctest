@@ -1,32 +1,39 @@
-##**************************************************************************
+##*********************************************************************************
+##
+## MIT License
 ##
 ## Copyright (C) 2019 Ömer Göktaş
 ## Contact: omergoktas.com
 ##
-## This file is part of the AsyncTest project.
+## Permission is hereby granted, free of charge, to any person obtaining a copy
+## of this software and associated documentation files (the "Software"), to deal
+## in the Software without restriction, including without limitation the rights
+## to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+## copies of the Software, and to permit persons to whom the Software is
+## furnished to do so, subject to the following conditions:
 ##
-## The AsyncTest is free software: you can redistribute it and/or
-## modify it under the terms of the GNU Lesser General Public License
-## version 3 as published by the Free Software Foundation.
+## The above copyright notice and this permission notice shall be included in all
+## copies or substantial portions of the Software.
 ##
-## The AsyncTest is distributed in the hope that it will be useful,
-## but WITHOUT ANY WARRANTY; without even the implied warranty of
-## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-## GNU Lesser General Public License for more details.
+## THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+## IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+## FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+## LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+## OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+## SOFTWARE.
 ##
-## You should have received a copy of the GNU Lesser General Public
-## License along with the AsyncTest. If not, see
-## <https://www.gnu.org/licenses/>.
-##
-##**************************************************************************
+##*********************************************************************************
 
-QT      += widgets
-TEMPLATE = app
-CONFIG  += c++14 strict_c++
+QT          += widgets
+TEMPLATE     = app
+CONFIG      += c++14 strict_c++
 
-DEFINES += QT_DEPRECATED_WARNINGS
-DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000
+DEFINES     += QT_DEPRECATED_WARNINGS
+DEFINES     += QT_DISABLE_DEPRECATED_BEFORE=0x060000
 
-SOURCES += main.cpp
+SOURCES     += main.cpp
+
+OTHER_FILES += $$PWD/LICENSE
 
 include($$PWD/async/async.pri)
